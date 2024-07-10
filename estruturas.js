@@ -1,14 +1,12 @@
 // importando módulos
 import { Cestruturas } from "./funcoes.js";
 
+// instanciando construtor para as Variaveis do sistema
+export const CVarSistemas = new Cestruturas("QtdProcessosInseridos, QtdProcessosAtivos, algoritmo, quantum, sobrecarga, paginacao");
 
 // inicializando Variaveis de sistema com valores Default
 CVarSistemas.QtdProcessosInseridos = 0;
 CVarSistemas.QtdProcessosAtivos = 0;
-
-
-// instanciando construtor para as Variaveis do sistema
-export const CVarSistemas = new Cestruturas("QtdProcessosInseridos, QtdProcessosAtivos, algoritmo, quantum, sobrecarga, paginacao");
 
 // instanciando construtor para os Turnarounds
 const CTurnarounds = new Cestruturas("IdProcesso, turnarounds");
