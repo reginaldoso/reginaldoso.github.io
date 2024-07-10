@@ -1,0 +1,295 @@
+/* Formatação geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+
+
+main{
+    display: block;
+    background-color: #808080;
+    height: 590spx;
+    width: 1050px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+span{
+    padding: 5px;
+   
+}
+p{
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+
+h2{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+input, select, button{
+    border-radius: 2px;
+}
+
+input[type="text"], .botao-algoritmo{
+width: 40px;
+text-align: center;
+}
+
+p .botao-submit{
+    display: block;
+    margin: auto;
+}
+
+p .botao-executar, p .botao-resetar{
+    padding: 0.2em;
+    background-color: #ffffff;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Formatação das divs */
+
+div{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    border: 2px solid #000000a9;
+    border-radius: 2px;
+}
+
+div#info-ambiente{
+    margin-top: 10px;
+    background-color: 	#ffffff;
+    height: 100px;
+    width: 500px;
+}
+
+div#info-turnarounds{
+    margin-top: 10px;
+    background-color: 	#ffffff;
+    height: 100px;
+    width: 500px;
+}
+
+div#menu-processos{
+    background-color: 	#ffffff;
+    height: 105px;
+    width: 500px;
+}
+
+
+div#processos-inseridos{
+    height: 105px;
+    width: 500px;
+    background-color: white;
+    
+    display: flex;
+    padding: 0.1rem;
+    overflow-x: auto;/*auto*/
+}
+
+/* Formatação das caixinhas de processos inseridos */
+
+div#processos-inseridos div{
+    display: block;
+    max-width: 5.9rem;
+    max-height: 5.5rem;
+    background-color: white;
+    margin-top: 3px;
+    margin-left: 6px;
+    border-color: #000000;
+}
+
+div#processos-inseridos #bloco-botao{
+    margin: 0;
+    max-width: 5.8rem;
+    max-height: 1.07rem;
+    border: none;
+    background-color: white;
+}
+
+div#processos-inseridos .botao-excluir-processo{
+    max-width: 5rem;
+    max-height: 1rem;
+    border: none;
+    outline: none;
+    color: red;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    padding: 0.5px 2px;
+}
+
+div#processos-inseridos .id-processo{
+    display: block;
+    max-width: 5.9rem;
+    max-height: 1rem;
+    font-size: 0.7em;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+div#processos-inseridos #bloco-imagem{
+    margin-top: 13px;
+    margin-right: 3px;
+    display: block;
+    max-width: 5.9rem;
+    max-height: 2.6rem;
+    background-color: white;
+    border: none;
+}
+
+div#processos-inseridos img{
+    margin:auto;
+    max-width: 5.9rem;
+    max-height: 2.6rem;
+}
+
+/* Formatação da memória secundaria*/
+
+div#info-memoriasec{
+    background-color: #808080;
+    height: 180px;
+    width: 500px;
+    border: none;
+}
+
+div#info-memoriaram{
+    background-color: #808080;
+    height: 180px;
+    width: 500px;
+    border: none;
+}
+
+div#estado-sistema{
+    border: none;
+}
+
+div#grafico-gantt{
+    background-color: 	#ffffff;
+    height: 150px;
+    width: 1025px;
+}
+
+
+
+/* Formatação da tabela da memória secundária */
+
+table.tabela-memoriasec {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-collapse: collapse;
+    margin:auto;
+    background-color: #ffffff;
+}
+
+table.tabela-memoriasec caption{
+    caption-side: top;
+    padding: 1px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+table.tabela-memoriasec td, table.tabela th {
+    border: 1px solid #000000;
+    padding: 7px 13px;
+}
+
+table.tabela-memoriasec tbody td {
+    font-size: 13px;
+}
+
+table.tabela-memoriasec tfoot td {
+    font-size: 14px;
+}
+
+table.tabela-memoriasec tfoot .links {
+    text-align: right;
+}
+
+table.tabela-memoriasec tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+/* Formatação da tabela da memória ram */
+
+table.tabela-memoriaram {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-collapse: collapse;
+    margin:auto;
+    background-color: #ffffff;
+}
+
+table.tabela-memoriaram caption{
+    caption-side: top;
+    padding: 1px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+table.tabela-memoriaram td, table.tabela th {
+    border: 1px solid #000000;
+    padding: 7px 13px;
+}
+
+table.tabela-memoriaram tbody td {
+    font-size: 13px;
+}
+
+table.tabela-memoriaram tfoot td {
+    font-size: 14px;
+}
+
+table.tabela-memoriaram tfoot .links {
+    text-align: right;
+}
+
+table.tabela-memoriaram tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+  
+
+/* Formatações de css exclusivas para o navegador firefox */
+
+@-moz-document url-prefix() {
+    
+    div#info-ambiente input{
+        width: 110px;
+    }
+    
+    div#menu-processos input{
+        width: 110px;
+
+    }
+   
+    
+}
+

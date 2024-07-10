@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalonador</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+</head>
+<body>
+    <main>
+        <section>
+            <div id="info-ambiente">
+                <p>
+                    <h2>Variáveis do Sistema</h2>
+                </p>
+                
+                <form>
+                    
+                    <p>
+                        <span>
+                            <label for="algoritmo">Algoritmo: </label>
+                            <select class="botao-algoritmo" required>
+                            <option value="fifo">FIFO</option>
+                            <option value="sjf">SJF</option>
+                            <option value="rr">RR</option>
+                            <option value="edf">EDF</option>
+                            </select>
+                        </span>
+                        
+                        <span>
+                            <label for="quantum">Quantum: </label>
+                            <input type="number" id="quantum" name="quantum" min="1" max="100" value="1" required/>
+                        </span>
+                        
+                    </p>
+                                        
+                    <p>
+                        <span>
+                            <label for="sobrecarga">Sobrecarga: </label>
+                            <input type="number" id="sobrecarga" name="sobrecarga" min="1" max="100" value="1" required/>
+                        </span>
+                        
+                        <span>
+                            <label for="paginacao:">Paginação: </label>
+                            <input type="text" id="paginacao" name="paginacao">
+                        </span>
+                        
+                    </p>
+                    <p>
+                        
+                        <input type="submit" id="enviar" name="enviar" value="Enviar" class="botao-submit"> 
+                                                
+                    </p>
+                </form>
+                
+                
+            </div>
+            <div id="info-turnarounds">
+                <p>
+                    <h2>Turnarounds</h2>
+                </p>
+                <p style="color: red;">
+                    Os turnarounds serão mostrados aqui.
+                </p>
+            </div>
+        </section>
+        <section>
+            <div id="menu-processos">
+                <h2>Menu de inserção de Processos</h2>
+                <form action="" id="insercao_processos">
+                <p>
+                    <span>
+                        <label for="tempo">Tempo: </label>
+                        <input type="number" id="tempo" name="tempo" min="1" max="100" value="1" required/>
+                    </span>
+                    
+                    <span>
+                        <label for="paginas">Páginas: </label>
+                        <input type="number" id="paginas" name="paginas" min="1" max="10" value="1" required/>
+                    </span>
+                </p>
+                <p>
+                    <span>
+                        <label for="deadline">Deadline: </label>
+                        <input type="number" id="deadline" name="deadline" min="0" max="100" value="0" required/>
+                    </span>
+                    
+                    <span>
+                        <label for="chegada">Chegada: </label>
+                        <input type="number" id="chegada" name="chegada" min="0" max="100" value="0" required/>
+                    </span>
+                    
+                </p>
+                
+                <p>
+                    <input type="submit" id="criar" name="criar" value="Criar processo" class="botao-submit"> 
+                </p>
+                </form>
+            </div>
+            <div id="processos-inseridos"></div>
+        </section>
+        <section>
+            <div id="info-memoriasec">
+                <table class="tabela-memoriasec">
+                    <caption>Memória Secundária</caption>
+                    <tbody>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    </tbody>
+                    </tr>
+                    </table>
+            </div>
+            <div id="info-memoriaram">
+                    <table class="tabela-memoriaram">
+                    <caption>Memória Ram</caption>
+                    <tbody>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    
+                    </table>
+            </div>
+        </section>
+        <section>
+            <div id="estado-sistema">
+            <form>
+            <p>
+                <span>
+                    <input type="submit" id="executar" name="executar" value="Executar" class="botao-executar"> 
+                </span>
+                <span>
+                    <input type="reset" id="resetar" name="resetar" value="Resetar" class="botao-resetar"> 
+                </span>
+                
+            </p>
+            </form>
+            </div>
+        </section>          
+        <section>
+            <div id="grafico-gantt">
+                <p style="color: red;">
+                    Inserir gráfico aqui.
+                </p>
+            </div>
+        </section>
+             
+    </main>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
