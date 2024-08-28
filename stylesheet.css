@@ -45,6 +45,20 @@ width: 40px;
 text-align: center;
 }
 
+input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 6em;
+    height: 0.5em;
+    position: relative;
+    left: 0.1em;
+    right: 0.1em;
+    border-radius: 5px;
+    background-color: #3071a9;
+    outline: none;
+}
+
 p .botao-submit{
     display: block;
     margin: auto;
@@ -79,10 +93,23 @@ div#info-ambiente{
 }
 
 div#info-turnarounds{
+    display: flex;
+    background-color: #ffffff;
     margin-top: 10px;
-    background-color: 	#ffffff;
-    height: 100px;
+    margin-left: 5px;
+    min-height: 100px;
     width: 500px;
+    border-color: none;
+    overflow-y: auto;
+}
+
+div#info-turnarounds .turnarounds{
+    display: block;
+    margin-top: 10px;
+    background-color: #ffffff;
+    max-height: 75px;
+    min-width: 490px;
+    border: none;
 }
 
 div#menu-processos{
@@ -96,7 +123,6 @@ div#processos-inseridos{
     height: 105px;
     width: 500px;
     background-color: white;
-    
     display: flex;
     padding: 0.1rem;
     overflow-x: auto;/*auto*/
@@ -162,121 +188,55 @@ div#processos-inseridos img{
     max-height: 2.6rem;
 }
 
-/* Formatação da memória secundaria*/
-
-div#info-memoriasec{
-    background-color: #808080;
-    height: 180px;
-    width: 500px;
-    border: none;
-}
-
-div#info-memoriaram{
-    background-color: #808080;
-    height: 180px;
-    width: 500px;
-    border: none;
-}
+/* Formatação para botões do estados do sistema */
 
 div#estado-sistema{
+    background-color: #808080;
+    height: 20px;
+    width: 1000px;
+    display: block;
+    padding: 0.1rem;
+    border: none;
+    margin: 10px 10px 20px 445px;
+}
+
+div#estado-sistema button{
+    padding: 4px;
+    margin-left: 5px;
+}
+
+/* Formatacao da div gráfico de grant */
+div#area-grafico{
+    display: flex;
+    background-color: #ffffff;
+    height: 300px;
+    min-width: 1025px;
+    border-color: none;
+    overflow-x: auto;
+}
+
+div#area-grafico .grant{
+    margin: 5px;
+    min-width: 1010px;
+    min-height: 270px;
+    background-color: #ffffff;
     border: none;
 }
 
-div#grafico-gantt{
-    background-color: 	#ffffff;
-    height: 150px;
-    width: 1025px;
+div#area-grafico .grant tr{
+    border: none; 
 }
 
-
-
-/* Formatação da tabela da memória secundária */
-
-table.tabela-memoriasec {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border-collapse: collapse;
-    margin:auto;
-    background-color: #ffffff;
+div#area-grafico .grant td{
+    border: none;
+    min-width: 25px;
 }
 
-table.tabela-memoriasec caption{
-    caption-side: top;
-    padding: 1px;
-    font-weight: bold;
-    font-size: 16px;
-    background-color: #ffffff;
+div#area-grafico .grant th{
+    font-size: 10px;
+    border: none;
+    min-width: 25px;
 }
-table.tabela-memoriasec td, table.tabela th {
-    border: 1px solid #000000;
-    padding: 7px 13px;
-}
-
-table.tabela-memoriasec tbody td {
-    font-size: 13px;
-}
-
-table.tabela-memoriasec tfoot td {
-    font-size: 14px;
-}
-
-table.tabela-memoriasec tfoot .links {
-    text-align: right;
-}
-
-table.tabela-memoriasec tfoot .links a{
-    display: inline-block;
-    background: #1C6EA4;
-    color: #FFFFFF;
-    padding: 2px 8px;
-    border-radius: 5px;
-}
-
-/* Formatação da tabela da memória ram */
-
-table.tabela-memoriaram {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border-collapse: collapse;
-    margin:auto;
-    background-color: #ffffff;
-}
-
-table.tabela-memoriaram caption{
-    caption-side: top;
-    padding: 1px;
-    font-weight: bold;
-    font-size: 16px;
-    background-color: #ffffff;
-}
-table.tabela-memoriaram td, table.tabela th {
-    border: 1px solid #000000;
-    padding: 7px 13px;
-}
-
-table.tabela-memoriaram tbody td {
-    font-size: 13px;
-}
-
-table.tabela-memoriaram tfoot td {
-    font-size: 14px;
-}
-
-table.tabela-memoriaram tfoot .links {
-    text-align: right;
-}
-
-table.tabela-memoriaram tfoot .links a{
-    display: inline-block;
-    background: #1C6EA4;
-    color: #FFFFFF;
-    padding: 2px 8px;
-    border-radius: 5px;
-}
-  
-
 /* Formatações de css exclusivas para o navegador firefox */
 
 @-moz-document url-prefix() {
@@ -289,7 +249,12 @@ table.tabela-memoriaram tfoot .links a{
         width: 110px;
 
     }
-   
-    
+
+    div#estado-sistema button{
+        padding: 4px;
+        margin-left: 1px;
+    }
+
+        
 }
 

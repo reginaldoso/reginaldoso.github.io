@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <title>Teste</title>
+</head>
+<body>
+    <script>        
+        let frontAnd = {};// cria um objeto para guardar o que é mostrado no frontAnd
+        frontAnd.vetor = []; // insere um vetor dentro do obj
+ 
+        async function PreencheVetor(frontAnd){
+            const cont = 3;
+
+            for(var i=0; i<cont; i++){
+                var aux = Math.floor(Math.random() * 3);
+                frontAnd.vetor[i] = aux;
+            }
+                          
+        }
+
+        async function MostraVetor(frontAnd){
+                
+            await PreencheVetor(frontAnd);
+            console.log(Array.isArray(frontAnd.vetor));
+            for (const key in frontAnd.vetor) {
+               console.log(frontAnd.vetor[key]);
+            }
+         
+        }
+
+        MostraVetor(frontAnd);
+        
+        
+    </script>
+</body>
+</html>

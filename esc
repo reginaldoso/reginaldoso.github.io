@@ -1,0 +1,89 @@
+[33mcommit f29e3776d93e00f3e84689dec26970ebc7943e4e[m[33m ([m[1;36mHEAD -> [m[1;32mreginaldo[m[33m, [m[1;31morigin/reginaldo[m[33m)[m
+Author: reginaldoso <reginaldoso@ufba.br>
+Date:   Wed Aug 14 06:31:40 2024 -0300
+
+    update
+
+[33mcommit 2e4183fd25fb495377dbd01e2a30781e1383eccc[m
+Author: reginaldoso <reginaldoso@ufba.br>
+Date:   Fri Aug 2 18:42:57 2024 -0300
+
+    Novo Registro de informações no arquivo README.md
+
+[33mcommit 17703df58350f8fcecae813cba541beabb45f986[m
+Author: reginaldoso <reginaldoso@ufba.br>
+Date:   Fri Aug 2 18:39:49 2024 -0300
+
+    Registro de informações no arquivo README.md
+
+[33mcommit afeff7910d697b6324aa5b323a03554707e048ec[m
+Author: reginaldoso <reginaldoso@ufba.br>
+Date:   Fri Aug 2 16:44:10 2024 -0300
+
+    update
+
+[33mcommit 4ea8af7aef065686d244c054b7a305920d40c0af[m[33m ([m[1;32mmain[m[33m)[m
+Author: reginaldoso <reginaldoso@ufba.br>
+Date:   Fri Aug 2 16:16:39 2024 -0300
+
+    correção de algumas inconsistências no html
+
+[33mcommit 2995802f4b0cc5d3b2ff8904f66d7902046d0e55[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: reginaldoso <reginaldoso@ufba.br>
+Date:   Sun Jul 28 20:56:40 2024 -0300
+
+    Grafico de Grant: ok. Turnrouds na tela: pendete. Algoritmos: pendente
+
+[33mcommit 193c147cbe5406ccf984bb5cf0fd353f06d85a36[m
+Author: reginaldoso <reginaldoso@ufba.br>
+Date:   Mon Jun 17 19:39:02 2024 -0300
+
+    implementação da visualização das informacoes dos processos a partir do click do mouse em cima do icone
+
+[33mcommit 4954f7d4f186384311d74ba26833b839af695c79[m
+Author: reginaldoso <reginaldoso@ufba.br>
+Date:   Fri Jun 14 22:51:37 2024 -0300
+
+    Implementação de exclusão de processos inseridos através da UI
+
+[33mcommit 864b374412035a29915421e1a6e489bccd0734db[m
+Author: reginaldoso <reginaldoso@ufba.br>
+Date:   Mon May 27 17:23:38 2024 -0300
+
+    Implementação da inserção de novos processos
+
+[33mcommit 5db051a341158a2ee9fa026e298ebd608d74f6e2[m
+Author: reginaldoso <reginaldoso@ufba.br>
+Date:   Sat May 18 17:00:19 2024 -0300
+
+    Finalização da primeira versão do designer do escalonador
+
+[33mcommit a0aae3de6e200592e5bf07416447a9c85efe373f[m
+Author: reginaldoso <reginaldoso@ufba.br>
+Date:   Fri May 17 00:47:03 2024 -0300
+
+    Mudança na interface
+
+[33mcommit 2fea159355fa118eb6cd0baee595ab0f9c57cc91[m
+Author: reginaldoso <reginaldoso@ufba.br>
+Date:   Wed May 15 22:42:27 2024 -0300
+
+    Atualização na interface do escalonador
+
+[33mcommit 7c7f9976afe9c81557d3dc3b24e9c340421d52b5[m
+Author: reginaldoso <reginaldoso@ufba.br>
+Date:   Tue May 14 20:50:03 2024 -0300
+
+    update
+
+[33mcommit eee04fd7a960cd9ba3ffe097a96d0bb3c4a65ce6[m
+Author: reginaldoso <reginaldoso@ufba.br>
+Date:   Thu May 9 22:32:17 2024 -0300
+
+    update
+
+[33mcommit efa06ed01dbcda8f11d6362a373ac7d34be7afae[m
+Author: reginaldoso <71613653+reginaldoso@users.noreply.github.com>
+Date:   Thu May 9 21:22:31 2024 -0300
+
+    Initial commit

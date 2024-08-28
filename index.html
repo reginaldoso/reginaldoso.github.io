@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escalonador</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link rel="shortcut icon" href="#" />
 
 </head>
 <body>
@@ -15,7 +16,7 @@
                     <h2>Variáveis do Sistema</h2>
                 </p>
                 
-                <form>
+                <form id = "variaveis-sistemas">
                     
                     <p>
                         <span>
@@ -40,16 +41,14 @@
                             <label for="sobrecarga">Sobrecarga: </label>
                             <input type="number" id="sobrecarga" name="sobrecarga" min="1" max="100" value="1" required/>
                         </span>
-                        
                         <span>
-                            <label for="paginacao:">Paginação: </label>
-                            <input type="text" id="paginacao" name="paginacao">
+                            <label for="vol">Atraso:&emsp;</label>
+                            2 s<input type="range" id="velocidade" name="velocidade" value="2" min="2" max="4"> 4 s
                         </span>
-                        
                     </p>
                     <p>
                         
-                        <input type="submit" id="enviar" name="enviar" value="Enviar" class="botao-submit"> 
+                        <input type="submit" id="enviar" name="enviar" value="Enviar" class="botao-submit" required="true"> 
                                                 
                     </p>
                 </form>
@@ -57,12 +56,9 @@
                 
             </div>
             <div id="info-turnarounds">
-                <p>
-                    <h2>Turnarounds</h2>
-                </p>
-                <p style="color: red;">
-                    Os turnarounds serão mostrados aqui.
-                </p>
+                <div class="turnarounds">
+                    
+                </div>
             </div>
         </section>
         <section>
@@ -76,16 +72,12 @@
                     </span>
                     
                     <span>
-                        <label for="paginas">Páginas: </label>
-                        <input type="number" id="paginas" name="paginas" min="1" max="10" value="1" required/>
-                    </span>
-                </p>
-                <p>
-                    <span>
                         <label for="deadline">Deadline: </label>
                         <input type="number" id="deadline" name="deadline" min="0" max="100" value="0" required/>
                     </span>
-                    
+                </p>
+                <p>
+                                      
                     <span>
                         <label for="chegada">Chegada: </label>
                         <input type="number" id="chegada" name="chegada" min="0" max="100" value="0" required/>
@@ -100,88 +92,23 @@
             </div>
             <div id="processos-inseridos"></div>
         </section>
-        <section>
-            <div id="info-memoriasec">
-                <table class="tabela-memoriasec">
-                    <caption>Memória Secundária</caption>
-                    <tbody>
-                    <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    </tr>
-                    </tbody>
-                    </tr>
-                    </table>
-            </div>
-            <div id="info-memoriaram">
-                    <table class="tabela-memoriaram">
-                    <caption>Memória Ram</caption>
-                    <tbody>
-                    <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    </tr>
-                    
-                    </table>
-            </div>
-        </section>
+        
         <section>
             <div id="estado-sistema">
             <form>
             <p>
-                <span>
-                    <input type="submit" id="executar" name="executar" value="Executar" class="botao-executar"> 
-                </span>
-                <span>
-                    <input type="reset" id="resetar" name="resetar" value="Resetar" class="botao-resetar"> 
-                </span>
-                
+                <button id="executar">Executar</button>
+                <button id="resetar">Resetar</button>
             </p>
             </form>
             </div>
         </section>          
         <section>
-            <div id="grafico-gantt">
-                <p style="color: red;">
-                    Inserir gráfico aqui.
-                </p>
+            <div id="area-grafico">
+                               
+                <div class="grant">
+                    
+                </div>
             </div>
         </section>
              
